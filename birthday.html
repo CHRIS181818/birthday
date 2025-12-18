@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Otubea Turns 19 💖</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    background:linear-gradient(120deg,#ff9a9e,#fad0c4);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Main container */
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+/* Headings */
+h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+h2{
+    font-size:30px;
+    margin-top:50px;
+}
+p{
+    font-size:20px;
+    line-height:1.8;
+    margin:20px 0;
+}
+
+/* Card sections */
+.section{
+    background:rgba(255,255,255,0.25);
+    padding:35px;
+    border-radius:25px;
+    margin:40px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Timeline */
+.timeline{
+    border-left:3px solid white;
+    padding-left:25px;
+}
+.timeline p{
+    margin:15px 0;
+}
+
+/* Signature */
+.signature{
+    margin-top:40px;
+    font-style:italic;
+    font-size:22px;
+}
+
+/* Hearts animation */
+.heart{
+    position:fixed;
+    color:#ff4d6d;
+    font-size:22px;
+    animation:float 6s linear infinite;
+    z-index:0;
+}
+
+@keyframes float{
+    from{transform:translateY(100vh); opacity:1;}
+    to{transform:translateY(-10vh); opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Music -->
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <!-- Opening -->
+    <div class="section">
+        <h1>Happy 19th Birthday, Otubea 🎉💖</h1>
+        <p>
+            Today isn’t just a birthday — it’s a celebration of **you**,
+            of 19 beautiful years filled with growth, strength, and grace.
+        </p>
+    </div>
+
+    <!-- Care & Feelings -->
+    <div class="section">
+        <h2>From My Heart</h2>
+        <p>
+            I want you to know this clearly:  
+            **I care about you deeply.**
+        </p>
+        <p>
+            Seeing you grow year after year has been something truly special to me.
+            You’ve grown not just in age, but in beauty, confidence, and kindness.
+        </p>
+        <p>
+            You are beautiful in ways that go far beyond what the eyes can see —
+            and watching you become the person you are today honestly makes me proud
+            and genuinely happy.
+        </p>
+    </div>
+
+    <!-- Growth timeline -->
+    <div class="section">
+        <h2>19 Years of Becoming ✨</h2>
+        <div class="timeline">
+            <p>🌱 A girl full of dreams</p>
+            <p>🌼 Growing with grace and strength</p>
+            <p>🌸 Learning, loving, becoming wiser</p>
+            <p>🌹 Now — a beautiful young woman, shining in her own way</p>
+        </div>
+    </div>
+
+    <!-- Wishes -->
+    <div class="section">
+        <h2>My Wishes for You</h2>
+        <p>
+            As you step into this new chapter of your life,
+            I wish you peace when life gets heavy,
+            joy in the little things,
+            and confidence in everything you do.
+        </p>
+        <p>
+            May you always remember how special you are
+            and how much you mean to the people who care about you.
+        </p>
+    </div>
+
+    <!-- Closing -->
+    <div class="section">
+        <p>
+            Happy 19th birthday once again, Otubea.
+            Never stop being the amazing person you are.
+        </p>
+        <p class="signature">
+            With all my care and warm thoughts,<br>
+            — Chris 💕
+        </p>
+    </div>
+
+</div>
+
+<script>
+function createHeart(){
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="❤";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration=(4+Math.random()*3)+"s";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),7000);
+}
+setInterval(createHeart,350);
+</script>
+
+</body>
+</html>
